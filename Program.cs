@@ -2,10 +2,19 @@
 {
     class Gameplay
     {
+        public static int rolldie(Random random)
+        {
+            return random.Next(1, 7);
+        }
         public static void Main(String[] args)
         {
-            Console.WriteLine("The Game Writing Process begins");
+            Random random = new Random();
 
+            int rolldieValue = rolldie(random);
+
+            Console.WriteLine($"The rolling die value is {rolldieValue}");
+
+           
             //The below line protects the program from stopping abruptly
             Console.ReadLine();
         }
