@@ -8,6 +8,8 @@
         }
         public static void Main(String[] args)
         {
+            int initialPositon = 0;
+
             Random random = new Random();
 
             int rolldieValue = rolldie(random);
