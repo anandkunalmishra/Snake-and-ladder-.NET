@@ -46,20 +46,22 @@
 
                     case 2:
                         Console.WriteLine("Ladder Case");
-                        if(Position+newrolldievalue < 100)
-           
+                        if(Position+newrolldievalue <= 100)
+                        {
+                            Position += newrolldievalue;
+                        }
+
                         rollCount++;
                         Console.WriteLine($"The roll count is {rollCount} and position is {Position}");
                         break;
 
                     case 3:
                         Console.WriteLine("Snake Case");
-                        if (100 - Position > 3)
+                        if (Position - newrolldievalue > 0)
                         {
                             Position -= newrolldievalue;
                         }
                         rollCount++;
-                        if (Position <= 0) Position = 0;
                         Console.WriteLine($"The roll count is {rollCount} and position is {Position}");
                         break;
 
