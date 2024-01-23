@@ -11,7 +11,6 @@
         //checks the value for the gameplay
         public static int checkGameplay(Random random)
         {
-            Console.WriteLine("Choose from option 1 - 3");
             int number = random.Next(1, 4);
             return number;
         }
@@ -70,12 +69,14 @@
                         break;
                 }
 
+                Console.WriteLine("\n");
 
             }
+            Console.WriteLine($"Total rollcount is {rollCount}");
 
 
 
-           
+
             //The below line protects the program from stopping abruptly
             Console.ReadLine();
         }
